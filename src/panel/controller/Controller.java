@@ -43,6 +43,10 @@ public class Controller {
 				String t =new String();
 					System.out.print(view.panelListar.getCombo());
 					model.getTel(view.panelListar.getCombo(), t);
+<<<<<<< HEAD
+=======
+					System.out.println("-->>> ");
+>>>>>>> f480c6c813ec66332324c156dbf5182cc3fea1d8
 			}
 		});
 		

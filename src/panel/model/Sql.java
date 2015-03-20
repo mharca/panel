@@ -65,7 +65,12 @@ public void getSqlTel(String nome, String tel){
 		stmt = c.createStatement();
 		ResultSet rs = stmt.executeQuery("SELECT telefone FROM pessoas WHERE name = '"+nome+"'");
 		
+<<<<<<< HEAD
 		System.out.println("Teste -->"+rs);
+=======
+		System.out.println("Teste --> "+rs);
+		
+>>>>>>> f480c6c813ec66332324c156dbf5182cc3fea1d8
 		rs.close();
 		stmt.close();
 		
@@ -82,6 +87,7 @@ public void getSqlTel(String nome, String tel){
 			//criarSql();
 			System.out.println("entrou. nome = "+p.getNome() + p.getPos()+p.getTel());
 			
+<<<<<<< HEAD
 			/*
 			stmt.executeUpdate("INSERT INTO PESSOAS VALUES("""
 					+ p.getNome()+ "","
@@ -92,6 +98,9 @@ public void getSqlTel(String nome, String tel){
 			
 			//String sql = "INSERT INTO PESSOAS(NAME,POSICAO,TELEFONE) VALUES('BOZO',1,2);";
 			PreparedStatement st = c.prepareStatement("INSERT INTO PESSOAS(NAME, POSICAO,TELEFONE) VALUES(?,?,?)");
+=======
+			PreparedStatement st = c.prepareStatement("INSERT INTO PESSOAS(NAME,POSICAO,TELEFONE) VALUES(?,?,?)");
+>>>>>>> f480c6c813ec66332324c156dbf5182cc3fea1d8
 			st.setString(1, p.getNome());
 			st.setString(2, p.getPos());
 			st.setString(3, p.getTel());
